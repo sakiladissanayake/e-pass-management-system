@@ -33,7 +33,6 @@ if(isset($_GET['id']))
 <div class="page-header-title">
 <div class="d-inline">
 <h4>Users</h4>
-
 </div>
 </div>
 </div>
@@ -54,7 +53,6 @@ if(isset($_GET['id']))
 </div>
 
 <div class="page-body">
-
 <div class="card">
 <div class="card-block">
 <div class="table-responsive dt-responsive">
@@ -73,7 +71,6 @@ if(isset($_GET['id']))
 </thead>
 <tbody>
 <?php 
- 	
  		$sql = "SELECT * FROM `tbl_user` where role_id != 1 and delete_status != 1";
 		$result = $conn->query($sql);
 		$i=1;
